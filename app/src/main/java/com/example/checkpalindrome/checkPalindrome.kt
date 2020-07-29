@@ -9,12 +9,6 @@ fun checkPalindrome(palindrome: Any): Boolean {
         return throw Exception("Argument not string, pass a string")
     else ""
 
-//    var str = palindrome
-//    while (str != String) {
-//        println("Argument not string, input a string")
-//        str = readLine()
-//    }
-
     //REMOVE ALL SPACE AND PUNCTUATION CHARACTERS
     val regex = "[^A-Za-z0-9]".toRegex()
     var string = regex.replace(palindrome, "")

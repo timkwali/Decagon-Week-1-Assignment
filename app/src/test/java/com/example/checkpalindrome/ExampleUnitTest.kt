@@ -28,9 +28,6 @@ class ExampleUnitTest {
         assertEquals(true, checkPalindrome("02/02/2020"))
         assertEquals(true, checkPalindrome("11/11/11 11:11"))
 
-        //A MIX OF NUMBERS AND ALPHABETS
-        assertEquals(true, checkPalindrome("A nut for a jar of tunas"))
-
         //WORKS WITH REALLY LONG ENTRY
         assertEquals(true, checkPalindrome(
             "Dennis, Nell, Edna, Leon, Nedra, Anita, Rolf, Nora, Alice, Carol, Leo, Jane, Reed, Dena, Dale, Basil, Rae, Penny, Lana, Dave, Denny, Lena, Ida, Bernadette, Ben, Ray, Lila, Nina, Jo, Ira, Mara, Sara, Mario, Jan, Ina, Lily, Arne, Bette, Dan, Reba, Diane, Lynn, Ed, Eva, Dana, Lynne, Pearl, Isabel, Ada, Ned, Dee, Rena, Joel, Lora, Cecil, Aaron, Flora, Tina, Arden, Noel, and Ellen sinned."
@@ -42,10 +39,5 @@ class ExampleUnitTest {
         //NOT A PALINDROME
         assertEquals(false, checkPalindrome("the round house"))
         assertEquals(false, checkPalindrome("33452323"))
-
-        //DOES NOT ACCEPT NON STRING ENTRIES
-//        val errorMessage = Exception("Argument not string, pass a string")
-//        assertEquals(errorMessage, checkPalindrome(9009))
-//        assertEquals(errorMessage, checkPalindrome(false))
     }
 }
